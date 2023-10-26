@@ -1,69 +1,85 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ExamSGP
 
-## Available Scripts
+> ExamSGP is a application which can be used by the faculties to conduct online exams for the students. The application is built using React, Electron, and Node.js. This application is built as a part of the course project for the course Software Group Project-IV. The application has features like creating exams, adding questions, and also directly connecting a google forms link to give the exam. The exam is given on the desktop application which is cross-platform (Windows, Linux, and MacOS). The application also has features like blocking screen sharing once exam has started, unable to switch windows and video proctoring. This type of features helps in preventing cheating during the exam and also helps in maintaining the integrity of the exam.
 
-In the project directory, you can run:
+## Application Preview
 
-### `yarn start`
+<img width=33% src="https://youtu.be/73P5Bx3zq_A?si=aVRzrikj-mhv3Uax">
+<br />
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Key Features of the Application
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- Create Exams
+- Video Proctoring
+- Screen Sharing Block
+- Switching Windows Block
+- Creating Classrooms for Students and much more.
 
-### `yarn test`
+## Tools & Technologies Used
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [![Node.js][Node.js]][Node.js-url]
+- [![React][React]][React-url]
+- [![Electron][Electron]][Electron-url]
+- [![MongoDB][MongoDB]][MongoDB-url]
 
-### `yarn build`
+[Node.js]: https://img.shields.io/static/v1?style=for-the-badge&message=Node.js&color=339933&logo=Node.js&logoColor=FFFFFF&label=
+[Node.js-url]: https://nodejs.org/en/
+[React]: https://img.shields.io/static/v1?style=for-the-badge&message=React&color=222222&logo=React&logoColor=61DAFB&label=
+[React-url]: https://reactjs.org/
+[Electron]: https://img.shields.io/static/v1?style=for-the-badge&message=Electron&color=47848F&logo=Electron&logoColor=FFFFFF&label=
+[Electron-url]: https://www.electronjs.org/
+[MongoDB]: https://img.shields.io/static/v1?style=for-the-badge&message=MongoDB&color=47A248&logo=MongoDB&logoColor=FFFFFF&label=
+[MongoDB-url]: https://www.mongodb.com/
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Node.js](https://nodejs.org/en/)
+- [MongoDB](https://www.mongodb.com/)
 
-### `yarn eject`
+### Clone
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+> Clone this repo to your local machine
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```shell
+git clone https://github.com/Jeet989/ExamSGP.git
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Setup
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+> Install server npm packages
 
-## Learn More
+```shell
+cd server && npm install && cd ..
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> Install website npm packages
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```shell
+cd client && cd desktop-app && npm install
+```
 
-### Code Splitting
+> Install desktop-app npm packages
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```shell
+cd client && cd web-app && npm install
+```
 
-### Analyzing the Bundle Size
+> Start the server
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+```shell
+cd server && npm start
+```
 
-### Making a Progressive Web App
+> Start the website
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+```shell
+cd client && cd desktop-app && npm start
+```
 
-### Advanced Configuration
+> Start the desktop-app
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-"# ExamSGP" 
+```shell
+cd client && cd web-app && electron .
+```
