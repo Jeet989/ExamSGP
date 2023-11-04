@@ -4,7 +4,7 @@
 
 ## Application Preview
 
-<img width=33% src="https://youtu.be/73P5Bx3zq_A?si=aVRzrikj-mhv3Uax">
+[![Application Preview](https://img.youtube.com/vi/73P5Bx3zq_A/0.jpg)](https://www.youtube.com/watch?v=73P5Bx3zq_A)
 <br />
 
 ## Key Features of the Application
